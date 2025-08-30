@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="/pagina/pergunta">fazer pergunta </a>
+    <h1>perguntas </h1>
+    <% usuarios.forEach(usu=>{  %>
+        <div class="container">
+
+        <p>  <%= usu.titulo %>   </p>
+        
+           <a href="/pagina/respostas/<%= usu.id  %>">responder</a>
+
+        </div>
+
+    <br>
+
+    <%  })  %>
+
+    <br>
+    
+
+</body>
+</html>
